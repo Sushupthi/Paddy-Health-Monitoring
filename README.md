@@ -7,7 +7,7 @@ This project is designed to calculate various vegetation indices from multispect
 ## Vegetation Indices Explained
 
 ### 1. NDVI (Normalized Difference Vegetation Index):
-- **Formula**: \( 	ext{NDVI} = rac{(	ext{NIR} - 	ext{Red})}{(	ext{NIR} + 	ext{Red})} \)
+- **Formula**: `NDVI = (NIR - Red) / (NIR + Red)`
 - **Purpose**: NDVI is used to measure the density and health of vegetation. It compares the reflectance values of the Near-Infrared (NIR) and Red bands of the electromagnetic spectrum.
 - **Interpretation**:
   - **NDVI < 0**: Non-vegetative surfaces (e.g., water, barren land).
@@ -16,7 +16,7 @@ This project is designed to calculate various vegetation indices from multispect
   - **NDVI ≥ 0.6**: Very healthy, dense vegetation.
 
 ### 2. GNDVI (Green Normalized Difference Vegetation Index):
-- **Formula**: \( 	ext{GNDVI} = rac{(	ext{NIR} - 	ext{Green})}{(	ext{NIR} + 	ext{Green})} \)
+- **Formula**: `NDVI = (NIR - Green) / (NIR + Green)`
 - **Purpose**: GNDVI is particularly sensitive to chlorophyll content in the vegetation and is often used to assess nitrogen levels in plants.
 - **Interpretation**:
   - **GNDVI < 0.1**: Very low chlorophyll content, indicating poor health.
@@ -24,7 +24,7 @@ This project is designed to calculate various vegetation indices from multispect
   - **GNDVI ≥ 0.5**: High chlorophyll content, indicating healthy vegetation.
 
 ### 3. RENDVI (Red-Edge Normalized Difference Vegetation Index):
-- **Formula**: \( 	ext{RENDVI} = rac{(	ext{NIR} - 	ext{Red-Edge})}{(	ext{NIR} + 	ext{Red-Edge})} \)
+- **Formula**: `NDVI = (NIR - Red_Edge) / (NIR + Red_Edge)`
 - **Purpose**: RENDVI is used for early stress detection in plants, particularly before visible symptoms appear. It is sensitive to changes in chlorophyll concentration and plant stress.
 - **Interpretation**:
   - **RENDVI < 0.2**: Early signs of plant stress.
@@ -32,7 +32,7 @@ This project is designed to calculate various vegetation indices from multispect
   - **RENDVI ≥ 0.5**: Healthy vegetation with no apparent stress.
 
 ### 4. RECI (Red-Edge Chlorophyll Index):
-- **Formula**: \( 	ext{RECI} = rac{(	ext{NIR})}{(	ext{Red-Edge})} - 1 \)
+- **Formula**: `NDVI = (NIR / Red_Edge) - 1`
 - **Purpose**: RECI is used to measure chlorophyll concentration in plants. It is effective in identifying areas with varying levels of chlorophyll, which correlates with plant health.
 - **Interpretation**:
   - **RECI < 2**: Low chlorophyll concentration.
